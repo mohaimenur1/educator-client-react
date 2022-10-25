@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import DetailImg from "./exam2.jpg";
+import { Link, useLoaderData } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -19,9 +20,12 @@ const Home = () => {
             <button className="btn btn-custom btn-lg ms-2 fw-bold">
               Blogs
             </button>
-            <button className="btn btn-outline-light btn-lg ms-2 fw-bold">
+            <Link
+              to="/programs"
+              className="btn btn-outline-light btn-lg ms-2 fw-bold"
+            >
               Go To our Programs
-            </button>
+            </Link>
           </div>
         </div>
       </header>
@@ -43,7 +47,9 @@ const Home = () => {
                 lovely looking badge or important skills you can immediately put
                 into practice. There is really no magic to it
               </p>
-              <button className="btn btn-custom fw-bold">Programs</button>
+              <Link to="/programs" className="btn btn-custom fw-bold">
+                Programs
+              </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Card.css";
 
 const Card = ({ program }) => {
@@ -16,8 +17,14 @@ const Card = ({ program }) => {
             <span className="fw-bold">Students: {program.student}</span>
             <span className="fw-bold">price: {program.price}</span>
           </div>
+
           <div className="btn-container d-grid gap-2 mt-3">
-            <button className="btn btn-custom fw-bold">Details</button>
+            <Link
+              to={`/programs/${program.id}`}
+              className="btn btn-custom fw-bold"
+            >
+              Details
+            </Link>
           </div>
         </div>
       </div>
