@@ -1,0 +1,12 @@
+.list-gp {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.list-group-hover:hover {
+  background-color: #d55e43 !important;
+  color: white !important;
+  border: none;
+}

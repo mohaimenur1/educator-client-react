@@ -1,5 +1,4 @@
 import React from "react";
-import demoImg from "../Home/exam2.jpg";
 import { useLoaderData } from "react-router-dom";
 import Card from "../../components/Card/Card";
 import Sidebar from "../../components/SideBar/Sidebar";

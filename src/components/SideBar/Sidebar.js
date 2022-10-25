@@ -1,18 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Sidebar.css";
 
 const Sidebar = ({ category }) => {
+  //   const handleClick = (id) => {
+  //     console.log("sidebar buttn click" + id);
+  //   };
+  console.log(category.id);
   return (
     <div>
       <div className="col-lg-12 mt-3">
-        <div className="list-group" id="list-tab" role="tablist">
+        <div
+          className="list-gp list-group-hover"
+          //   id="list-tab"
+          //   role="tablist"
+        >
           <Link
-            className="list-group-item list-group-item-action active"
-            id="list-home-list"
-            data-bs-toggle="list"
-            // href="#list-home"
-            role="tab"
-            aria-controls="list-home"
+            to={`/programs/${category.id}`}
+            className="list-group-item list-group-item-action"
+            // id="list-home-list"
+            // data-bs-toggle="list"
+            // // href="#list-home"
+            // role="tab"
+            // aria-controls="list-home"
           >
             {category.pragram_name}
           </Link>
