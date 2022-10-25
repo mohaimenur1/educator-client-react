@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import NavImg from "./icon4.png";
 
 const Navbar = () => {
   return (
@@ -8,7 +9,7 @@ const Navbar = () => {
         <div className="container-fluid">
           <Link className="navbar-brand">
             {" "}
-            <img src="./icon4.png" /> Educator
+            <img src={NavImg} style={{ width: 40, height: 34 }} /> Educator
           </Link>
           <button
             className="navbar-toggler"
