@@ -2,7 +2,6 @@ import React from "react";
 import "./Card.css";
 
 const Card = ({ program }) => {
-  console.log(program);
   return (
     <div className="col-lg-6">
       <div className="card shadow-lg h-100">
