@@ -49,10 +49,15 @@ const Navbar = () => {
                 <Link className="nav-link fw-bold text-uppercase">Blog</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fw-bold text-uppercase">Login</Link>
+                <Link to="/login" className="nav-link fw-bold text-uppercase">
+                  Login
+                </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fw-bold text-uppercase">
+                <Link
+                  to="/register"
+                  className="nav-link fw-bold text-uppercase"
+                >
                   Register
                 </Link>
               </li>

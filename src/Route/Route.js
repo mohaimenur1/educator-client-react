@@ -1,8 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
 import Home from "../page/Home/Home";
+import Login from "../page/Login/Login";
 import ProgramDetails from "../page/ProgramDetails/ProgramDetails";
 import Programs from "../page/Programs/Programs";
+import Register from "../page/Register/Register";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +32,14 @@ export const router = createBrowserRouter([
           return fetch(`http://localhost:5000/programs/${params.pId}`);
         },
         element: <ProgramDetails />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
       },
     ],
   },
