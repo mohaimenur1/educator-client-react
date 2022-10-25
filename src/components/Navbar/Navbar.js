@@ -10,7 +10,7 @@ const Navbar = () => {
           <Link className="navbar-brand">
             {" "}
             <img src={NavImg} style={{ width: 55, height: 44 }} />{" "}
-            <span className="fw-bold h2">Educator</span>
+            <span className="fw-bold h2 text-secondary">Educator</span>
           </Link>
           <button
             className="navbar-toggler"
@@ -34,7 +34,10 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fw-bold text-uppercase">
+                <Link
+                  to="/programs"
+                  className="nav-link fw-bold text-uppercase"
+                >
                   Programs
                 </Link>
               </li>

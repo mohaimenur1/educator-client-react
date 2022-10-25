@@ -35,8 +35,10 @@ const Home = () => {
           </div>
           <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center">
             <div className="details-section  ">
-              <h2>Best Program for University Admission test.</h2>
-              <p>
+              <h2 className="text-secondary">
+                Best Program for University Admission test.
+              </h2>
+              <p className="text-secondary">
                 What do you think is better to receive after each lesson: a
                 lovely looking badge or important skills you can immediately put
                 into practice. There is really no magic to it
