@@ -1,0 +1,23 @@
+header {
+  min-height: 90vh;
+  /* background-image: url("./background2.jpg"); */
+  /* opacity: 0.7; */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./admission.png");
+  /* filter: brightness(80%); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn-custom {
+  background-color: rgb(211, 96, 70);
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+.btn-custom:hover {
+  background-color: rgb(123, 39, 20);
+  color: white;
+}

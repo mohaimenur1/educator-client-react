@@ -6,10 +6,11 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-light">
-        <div className="container-fluid">
+        <div className="container">
           <Link className="navbar-brand">
             {" "}
-            <img src={NavImg} style={{ width: 40, height: 34 }} /> Educator
+            <img src={NavImg} style={{ width: 55, height: 44 }} />{" "}
+            <span className="fw-bold h2">Educator</span>
           </Link>
           <button
             className="navbar-toggler"
@@ -23,24 +24,33 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link
+                  className="nav-link fw-bold text-uppercase active"
+                  aria-current="page"
+                >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Features
-                </a>
+                <Link className="nav-link fw-bold text-uppercase">
+                  Programs
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Pricing
-                </a>
+                <Link className="nav-link fw-bold text-uppercase">Faq</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
+                <Link className="nav-link fw-bold text-uppercase">Blog</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link fw-bold text-uppercase">Login</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link fw-bold text-uppercase">
+                  Register
+                </Link>
               </li>
             </ul>
           </div>
