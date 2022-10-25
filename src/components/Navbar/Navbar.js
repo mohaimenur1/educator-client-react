@@ -27,6 +27,7 @@ const Navbar = () => {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link
+                  to="/"
                   className="nav-link fw-bold text-uppercase active"
                   aria-current="page"
                 >

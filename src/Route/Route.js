@@ -14,7 +14,13 @@ export const router = createBrowserRouter([
       },
       {
         path: "/programs",
+        loader: async () => {
+          return fetch("http://localhost:5000/programs");
+        },
         element: <Programs />,
+      },
+      {
+        path: "/",
       },
     ],
   },

@@ -17,7 +17,7 @@ const Home = () => {
           </p>
           <div className="d-flex text-center">
             <button className="btn btn-custom btn-lg ms-2 fw-bold">
-              Bolgs
+              Blogs
             </button>
             <button className="btn btn-outline-light btn-lg ms-2 fw-bold">
               Go To our Programs
