@@ -38,7 +38,7 @@ const Register = () => {
     };
     updateUserProfile(profile)
       .then(() => {})
-      .catch((error) => console.error());
+      .catch((error) => console.error(error));
   };
   return (
     <div className="mt-4  container">

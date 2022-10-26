@@ -81,7 +81,7 @@ const Navbar = () => {
                   />
                   <label
                     className="form-check-label"
-                    htmlfor="flexSwitchCheckDefault"
+                    htmlFor="flexSwitchCheckDefault"
                   >
                     {toggle ? <span>Dark</span> : <span>Light</span>}
                   </label>

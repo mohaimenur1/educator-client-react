@@ -1,4 +1,4 @@
-import { GoogleAuthProvider } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
 import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/UserContext";
@@ -6,9 +6,10 @@ import "./Login.css";
 
 const Login = () => {
   const [error, setError] = useState("");
-  const { googleLogin, login } = useContext(AuthContext);
+  const { googleLogin, login, githubLogin } = useContext(AuthContext);
 
   const googleProvider = new GoogleAuthProvider();
+  const githubProvider = new GithubAuthProvider();
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -38,6 +39,15 @@ const Login = () => {
 
   const handleGoogleSignIn = () => {
     googleLogin(googleProvider)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => console.error(error));
+  };
+
+  const handleGithubLogin = () => {
+    githubLogin(githubProvider)
       .then((result) => {
         const user = result.user;
         console.log(user);
@@ -124,6 +134,7 @@ const Login = () => {
             </button>
 
             <button
+              onClick={handleGithubLogin}
               type="button"
               className="btn login-btn-bg btn-floating mx-1"
             >

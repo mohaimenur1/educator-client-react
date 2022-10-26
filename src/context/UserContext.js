@@ -42,6 +42,12 @@ const UserContext = ({ children }) => {
     return updateProfile(auth.currentUser, profile);
   };
 
+  //github login
+  const githubLogin = (githubProvider) => {
+    setLoading(true);
+    return signInWithPopup(auth, githubProvider);
+  };
+
   //logut
   const logout = () => {
     setLoading(true);
@@ -67,6 +73,7 @@ const UserContext = ({ children }) => {
     googleLogin,
     loading,
     updateUserProfile,
+    githubLogin,
   };
 
   return (
