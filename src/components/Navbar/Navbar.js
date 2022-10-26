@@ -61,7 +61,10 @@ const Navbar = () => {
                 <Link className="nav-link fw-semibold text-uppercase">Faq</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fw-semibold text-uppercase">
+                <Link
+                  to="/blogs"
+                  className="nav-link fw-semibold text-uppercase"
+                >
                   Blog
                 </Link>
               </li>
