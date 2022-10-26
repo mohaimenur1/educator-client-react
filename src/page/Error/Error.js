@@ -8,7 +8,7 @@ const Error = () => {
         src="https://assets10.lottiefiles.com/packages/lf20_cg9lvxff.json"
         background="transparent"
         speed="1"
-        style={{ width: "500px", height: "500px" }}
+        style={{ width: "350px", height: "350px" }}
         loop
         autoplay
       ></lottie-player>
