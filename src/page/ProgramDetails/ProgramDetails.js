@@ -52,7 +52,7 @@ const ProgramDetails = () => {
         />
         <div className="card-body" ref={ref}>
           <h4 className="text-center mb-2 tw-bold text-dark">
-            Description {detailsData?.pragram_name}
+            Description : {detailsData?.pragram_name}
           </h4>
           <p className="card-text">{detailsData?.description}</p>
           <div className="card-footer d-flex justify-content-between">
