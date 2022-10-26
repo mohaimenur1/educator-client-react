@@ -5,7 +5,7 @@ import RegisterImg from "./register.jpg";
 
 const Register = () => {
   const [error, setError] = useState("");
-  const { register } = useContext(AuthContext);
+  const { register, updateUserProfile } = useContext(AuthContext);
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -23,11 +23,22 @@ const Register = () => {
         console.log(user);
         form.reset();
         setError("");
+        handleUpdateUserProfile(name, photoURL);
       })
       .catch((error) => {
         console.error(error);
         setError(error.message);
       });
+  };
+
+  const handleUpdateUserProfile = (name, photoURL) => {
+    const profile = {
+      displayName: name,
+      photoURL: photoURL,
+    };
+    updateUserProfile(profile)
+      .then(() => {})
+      .catch((error) => console.error());
   };
   return (
     <div className="mt-4  container">
