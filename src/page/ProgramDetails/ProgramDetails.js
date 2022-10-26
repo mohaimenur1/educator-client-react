@@ -72,7 +72,7 @@ const ProgramDetails = () => {
               </h4>
               {curriculum.map((c) => {
                 return (
-                  <div>
+                  <div key={c}>
                     <li>{c}</li>
                   </div>
                 );
