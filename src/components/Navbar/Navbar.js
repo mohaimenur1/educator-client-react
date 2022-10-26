@@ -1,16 +1,21 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/UserContext";
 import NavImg from "./icon4.png";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
   const { user, logout } = useContext(AuthContext);
 
   const handleLogOut = () => {
     logout()
       .then(() => {})
       .catch((error) => console.log(error));
+  };
+
+  const handleToggleClick = () => {
+    setToggle(!toggle);
   };
 
   return (
@@ -59,6 +64,25 @@ const Navbar = () => {
                 <Link className="nav-link fw-semibold text-uppercase">
                   Blog
                 </Link>
+              </li>
+              <li className="nav-item d-lg-flex justify-content-center align-items-center me-1 ms-1">
+                <div
+                  onClick={handleToggleClick}
+                  className="form-check form-switch "
+                >
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="flexSwitchCheckDefault"
+                  />
+                  <label
+                    className="form-check-label"
+                    htmlfor="flexSwitchCheckDefault"
+                  >
+                    {toggle ? <span>Dark</span> : <span>Light</span>}
+                  </label>
+                </div>
               </li>
               {/* <li className="nav-item">
                 <Link
