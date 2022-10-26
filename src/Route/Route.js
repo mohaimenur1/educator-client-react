@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
 import Blog from "../page/Blog/Blog";
 import CheckOut from "../page/CheckOut/CheckOut";
+import Error from "../page/Error/Error";
 import Home from "../page/Home/Home";
 import Login from "../page/Login/Login";
 import ProgramDetails from "../page/ProgramDetails/ProgramDetails";
@@ -61,5 +62,9 @@ export const router = createBrowserRouter([
         element: <Blog />,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <Error />,
   },
 ]);
