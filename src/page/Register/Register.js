@@ -48,7 +48,9 @@ const Register = () => {
         </div>
 
         <div className="col-lg-6">
-          <h3 className="text-center mt-4 text-decoration-underline">Form</h3>
+          <h3 className="text-center mt-4 text-decoration-underline link-text-color">
+            Register Form
+          </h3>
           <form onSubmit={handleSubmit}>
             <div className="row mb-4">
               <div className="col">
@@ -115,12 +117,14 @@ const Register = () => {
                 <span className="text-danger fw-bold">{error}</span>
               </label>
               <label className="form-check-label" htmlFor="form2Example33">
-                <Link to="/login">Already Have An Account?</Link>
+                <Link to="/login" className="link-text-color">
+                  Already Have An Account?
+                </Link>
               </label>
             </div>
 
             <div className="d-grid gap-2">
-              <button type="submit" className="btn btn-primary btn-block mb-4">
+              <button type="submit" className="btn btn-custom btn-block mb-4">
                 Register
               </button>
             </div>
