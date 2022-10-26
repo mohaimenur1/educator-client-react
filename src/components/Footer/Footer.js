@@ -1,36 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <div>
       <footer className="text-center text-lg-start bg-white text-muted">
-        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-          {/* <div className="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
-          </div>
-
-          <div>
-            <a className="me-4 link-secondary">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a className="me-4 link-secondary">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a className="me-4 link-secondary">
-              <i className="fab fa-google"></i>
-            </a>
-            <a className="me-4 link-secondary">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a className="me-4 link-secondary">
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a className="me-4 link-secondary">
-              <i className="fab fa-github"></i>
-            </a>
-          </div> */}
-        </section>
+        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"></section>
 
         <section className="">
           <div className="container text-center text-md-start mt-5">
@@ -40,37 +16,46 @@ const Footer = () => {
                   <i className="fas fa-gem me-3 text-secondary"></i>Educator
                 </h6>
                 <p className="">
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
+                  Here you can find your expected program. Educator is not only
+                  the best course provider but also no one give that much amount
+                  of course to the student. Our target is to reach the highest
+                  amount of students who can beat anywhere.
                 </p>
               </div>
 
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Links</h6>
                 <p>
-                  <a className="text-reset">Angular</a>
+                  <Link to="/" className="text-reset">
+                    Home
+                  </Link>
                 </p>
                 <p>
-                  <a className="text-reset">React</a>
+                  <Link to="/programs" className="text-reset">
+                    Programs
+                  </Link>
                 </p>
                 <p>
-                  <a className="text-reset">Vue</a>
+                  <Link to="/blogs" className="text-reset">
+                    Blog
+                  </Link>
                 </p>
                 <p>
-                  <a className="text-reset">Laravel</a>
+                  <Link to="/register" className="text-reset">
+                    Register
+                  </Link>
                 </p>
               </div>
 
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                 <p>
-                  <i className="fas fa-home me-3 text-secondary"></i> New York,
-                  NY 10012, US
+                  <i className="fas fa-home me-3 text-secondary"></i> Mirpur,
+                  Dhaka
                 </p>
                 <p>
                   <i className="fas fa-envelope me-3 text-secondary"></i>
-                  info@example.com
+                  educator@edu.com
                 </p>
                 <p>
                   <i className="fas fa-phone me-3 text-secondary"></i> + 01 234
@@ -83,12 +68,11 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <section className="d-flex justify-content-center align-items-center p-4 border-bottom">
             <div className="me-5 d-none d-lg-block">
               <span>Get connected with us on social networks:</span>
             </div>
-
-            <div>
+            {/* <div>
               <a className="me-4 link-secondary">
                 <i className="fab fa-facebook-f"></i>
               </a>
@@ -107,7 +91,54 @@ const Footer = () => {
               <a className="me-4 link-secondary">
                 <i className="fab fa-github"></i>
               </a>
-            </div>
+            </div> */}
+            <a
+              className="btn btn-link btn-floating btn-lg text-dark m-1"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i className="fab fa-facebook-f"></i>
+            </a>
+
+            <a
+              className="btn btn-link btn-floating btn-lg text-dark m-1"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i className="fab fa-twitter"></i>
+            </a>
+
+            <a
+              className="btn btn-link btn-floating btn-lg text-dark m-1"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i className="fab fa-google"></i>
+            </a>
+
+            <a
+              className="btn btn-link btn-floating btn-lg text-dark m-1"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+
+            <a
+              className="btn btn-link btn-floating btn-lg text-dark m-1"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
+
+            <a
+              className="btn btn-link btn-floating btn-lg text-dark m-1"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i className="fab fa-github"></i>
+            </a>
           </section>
         </section>
 
