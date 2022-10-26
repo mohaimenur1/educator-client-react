@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/UserContext";
-import NavImg from "./icon4.png";
+import NavImg from "./icon1.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -20,12 +20,12 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-light">
+      <nav className="navbar navbar-expand-lg navbar-bg bg-light">
         <div className="container">
-          <Link className="navbar-brand">
+          <Link className="navbar-brand d-flex align-items-center justify-content-center">
             {" "}
             <img src={NavImg} style={{ width: 55, height: 44 }} />{" "}
-            <span className="fw-bold h2 text-secondary">Educator</span>
+            <span className="fw-bold h2 ">Educator</span>
           </Link>
           <button
             className="navbar-toggler"

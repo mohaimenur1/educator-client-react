@@ -1,14 +1,20 @@
 .navbar-bg {
-  background-color: #3f4e4f;
+  /* background-color: #3f4e4f; */
+  background: rgb(226, 113, 88);
+  background: linear-gradient(
+    90deg,
+    rgba(226, 113, 88, 0.5158438375350141) 11%,
+    rgba(74, 212, 237, 0.2861519607843137) 87%
+  );
 }
 
-.tooltip {
+/* .tooltip {
   position: relative;
   display: inline-block;
   font-size: 16px;
-}
+} */
 
-.tooltip .tooltiptext {
+.tooltiptext {
   visibility: hidden;
   background-color: black;
   color: #fff;

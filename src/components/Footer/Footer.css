@@ -1,6 +1,12 @@
 .bg-footer {
-  background-color: rgb(211, 96, 70);
-  color: white;
+  /* background-color: rgb(211, 96, 70); */
+  color: black;
+  background: rgb(226, 113, 88);
+  background: linear-gradient(
+    90deg,
+    rgba(226, 113, 88, 0.5158438375350141) 11%,
+    rgba(74, 212, 237, 0.2861519607843137) 87%
+  );
 }
 
 .icon-text {

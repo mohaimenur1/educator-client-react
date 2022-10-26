@@ -9,7 +9,7 @@ const Home = () => {
       <header className="d-flex flex-column justify-content-center">
         <div className="container text-center d-flex flex-column justify-content-center align-items-center">
           <span className="text-white display-2 fw-bold lh-base">
-            Admission Test Program.
+            University Program.
           </span>
           <p className="text-white fw-bold lh-lg ">
             Easy to Learn any thing from the best courses with best selling tag
@@ -31,7 +31,7 @@ const Home = () => {
       </header>
 
       {/* main section */}
-      <section className="-flex justify-content-centera align-iitems-center mt-5 container">
+      <section className="flex justify-content-centera align-iitems-center mt-5 mb-4 container">
         <h1 className="text-center mb-4 text-secondary">Visit Our Programs</h1>
         <div className="row">
           <div className="col-lg-6">
@@ -40,7 +40,7 @@ const Home = () => {
           <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center">
             <div className="details-section  ">
               <h2 className="text-secondary">
-                Best Program for University Admission test.
+                Best Program for University Student.
               </h2>
               <p className="text-secondary">
                 What do you think is better to receive after each lesson: a
