@@ -14,17 +14,6 @@ const options = {
 
 const ProgramDetails = () => {
   const detailsData = useLoaderData();
-  //   console.log(detailsData);
-  //   const {
-  //     id,
-  //     pragram_name,
-  //     image,
-  //     topic,
-  //     student,
-  //     price,
-  //     description,
-  //     vision,
-  //   } = detailsData;
   const { curriculum } = detailsData;
   console.log(curriculum);
 

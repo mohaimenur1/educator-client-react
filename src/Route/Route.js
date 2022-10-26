@@ -1,10 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
+import CheckOut from "../page/CheckOut/CheckOut";
 import Home from "../page/Home/Home";
 import Login from "../page/Login/Login";
 import ProgramDetails from "../page/ProgramDetails/ProgramDetails";
 import Programs from "../page/Programs/Programs";
 import Register from "../page/Register/Register";
+import PrivetRoute from "./PrivetRoute";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +42,14 @@ export const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        path: "/checkout",
+        element: (
+          <PrivetRoute>
+            <CheckOut />
+          </PrivetRoute>
+        ),
       },
     ],
   },

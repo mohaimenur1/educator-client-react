@@ -1,13 +1,34 @@
 import { GoogleAuthProvider } from "firebase/auth";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/UserContext";
 import "./Login.css";
 
 const Login = () => {
-  const { googleLogin } = useContext(AuthContext);
+  const [error, setError] = useState("");
+  const { googleLogin, login } = useContext(AuthContext);
 
   const googleProvider = new GoogleAuthProvider();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+
+    login(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        form.reset();
+        setError("");
+      })
+      .catch((error) => {
+        console.error(error);
+        setError(error.message);
+      });
+  };
 
   const handleGoogleSignIn = () => {
     googleLogin(googleProvider)
@@ -22,12 +43,18 @@ const Login = () => {
     <div className="container mt-5 ">
       <h2 className="text-center">Login Form</h2>
       <div className="card shadow">
-        <form className="mt-4 p-5">
+        <form onSubmit={handleSubmit} className="mt-4 p-5">
           <div className="form-outline mb-4">
             <label className="form-label" htmlFor="form2Example1">
               Email address
             </label>
-            <input type="email" id="form2Example1" className="form-control" />
+            <input
+              name="email"
+              type="email"
+              id="form2Example1"
+              className="form-control"
+              required
+            />
           </div>
 
           <div className="form-outline mb-4">
@@ -35,9 +62,11 @@ const Login = () => {
               Password
             </label>
             <input
+              name="password"
               type="password"
               id="form2Example2"
               className="form-control"
+              required
             />
           </div>
 
@@ -59,8 +88,11 @@ const Login = () => {
             </div> */}
 
             <div className="col">
-              <Link className="link-text-color">Forgot password?</Link>
+              <span className="text-danger">{error}</span>
             </div>
+            {/* <div className="col">
+              <Link className="link-text-color">Forgot password?</Link>
+            </div> */}
           </div>
           <div className="d-grid gap-2">
             <button type="submit" className="btn login-btn-bg btn-block mb-4">
