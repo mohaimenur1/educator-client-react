@@ -2,3 +2,7 @@
   background-color: rgb(211, 96, 70);
   color: white;
 }
+
+.pdf-icon {
+  cursor: pointer;
+}
