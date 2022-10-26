@@ -1,5 +1,6 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
+import "./ProgramDetails.css";
 
 const ProgramDetails = () => {
   const detailsData = useLoaderData();
@@ -19,8 +20,8 @@ const ProgramDetails = () => {
   return (
     <div className="container">
       <div className="card shadow mt-3">
-        <div className="card-footer">
-          <h5 className="card-title text-center mt-5 text-decoration-underline display-4 text-secondary">
+        <div className="card-footer heading-bg">
+          <h5 className="card-title text-center mt-5 text-decoration-underline display-4 ">
             {detailsData?.pragram_name}
           </h5>
         </div>

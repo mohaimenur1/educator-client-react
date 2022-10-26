@@ -2,6 +2,22 @@ body {
   color: grey;
 }
 
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+i {
+  color: white;
+} */
+
+.link-text-color {
+  color: rgb(211, 96, 70);
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
 }

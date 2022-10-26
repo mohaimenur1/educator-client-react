@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -110,7 +111,7 @@ const Footer = () => {
           </section>
         </section>
 
-        <div className="text-center p-4">
+        <div className="text-center p-4 bg-footer">
           © 2021 Copyright:
           <a className="text-reset fw-bold">Educator by Rahi</a>
         </div>

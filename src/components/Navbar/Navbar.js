@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavImg from "./icon4.png";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
@@ -28,7 +29,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   to="/"
-                  className="nav-link fw-bold text-uppercase active"
+                  className="nav-link fw-semibold text-uppercase active"
                   aria-current="page"
                 >
                   Home
@@ -37,26 +38,31 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   to="/programs"
-                  className="nav-link fw-bold text-uppercase"
+                  className="nav-link fw-semibold text-uppercase"
                 >
                   Programs
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fw-bold text-uppercase">Faq</Link>
+                <Link className="nav-link fw-semibold text-uppercase">Faq</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fw-bold text-uppercase">Blog</Link>
+                <Link className="nav-link fw-semibold text-uppercase">
+                  Blog
+                </Link>
               </li>
               <li className="nav-item">
-                <Link to="/login" className="nav-link fw-bold text-uppercase">
+                <Link
+                  to="/login"
+                  className="nav-link fw-semibold text-uppercase"
+                >
                   Login
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
                   to="/register"
-                  className="nav-link fw-bold text-uppercase"
+                  className="nav-link fw-semibold text-uppercase"
                 >
                   Register
                 </Link>

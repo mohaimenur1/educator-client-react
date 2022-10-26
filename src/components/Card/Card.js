@@ -6,7 +6,7 @@ const Card = ({ program }) => {
   return (
     <div className="col-lg-6">
       <div className="card shadow-lg h-100">
-        <img src={program.image} className="card-img-top" alt="..." />
+        <img src={program.image} className="card-img-top img-fluid" alt="..." />
         <div className="card-body">
           <div className="card-details d-flex justify-content-between">
             <h5 className="card-title fw-bold">{program.pragram_name}</h5>

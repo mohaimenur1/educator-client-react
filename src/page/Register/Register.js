@@ -17,7 +17,7 @@ const Register = () => {
               <div className="col">
                 <div className="form-outline">
                   <label className="form-label" for="form3Example1">
-                    Name
+                    Full Name
                   </label>
                   <input
                     type="text"
@@ -45,6 +45,12 @@ const Register = () => {
                 className="form-control"
               />
             </div>
+            <div className="form-outline mb-4">
+              <label className="form-label" for="form3Example4">
+                Photo URL
+              </label>
+              <input type="text" id="form3Example4" className="form-control" />
+            </div>
 
             <div className="form-check d-flex justify-content-center mb-4">
               <input
@@ -61,7 +67,7 @@ const Register = () => {
 
             <div class="d-grid gap-2">
               <button type="submit" className="btn btn-primary btn-block mb-4">
-                Sign up
+                Register
               </button>
             </div>
           </form>
