@@ -1,22 +1,37 @@
-import React from "react";
+import { GoogleAuthProvider } from "firebase/auth";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../context/UserContext";
 import "./Login.css";
 
 const Login = () => {
+  const { googleLogin } = useContext(AuthContext);
+
+  const googleProvider = new GoogleAuthProvider();
+
+  const handleGoogleSignIn = () => {
+    googleLogin(googleProvider)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => console.error(error));
+  };
+
   return (
     <div className="container mt-5 ">
       <h2 className="text-center">Login Form</h2>
       <div className="card shadow">
         <form className="mt-4 p-5">
           <div className="form-outline mb-4">
-            <label className="form-label" for="form2Example1">
+            <label className="form-label" htmlFor="form2Example1">
               Email address
             </label>
             <input type="email" id="form2Example1" className="form-control" />
           </div>
 
           <div className="form-outline mb-4">
-            <label className="form-label" for="form2Example2">
+            <label className="form-label" htmlFor="form2Example2">
               Password
             </label>
             <input
@@ -47,7 +62,7 @@ const Login = () => {
               <Link className="link-text-color">Forgot password?</Link>
             </div>
           </div>
-          <div class="d-grid gap-2">
+          <div className="d-grid gap-2">
             <button type="submit" className="btn login-btn-bg btn-block mb-4">
               Log In
             </button>
@@ -61,25 +76,13 @@ const Login = () => {
               </Link>
             </p>
             <p>or sign up with:</p>
-            <button
-              type="button"
-              className="btn login-btn-bg btn-floating mx-1"
-            >
-              <i className="fab fa-facebook-f"></i>
-            </button>
 
             <button
+              onClick={handleGoogleSignIn}
               type="button"
               className="btn login-btn-bg btn-floating mx-1"
             >
               <i className="fab fa-google"></i>
-            </button>
-
-            <button
-              type="button"
-              className="btn login-btn-bg btn-floating mx-1"
-            >
-              <i className="fab fa-twitter"></i>
             </button>
 
             <button

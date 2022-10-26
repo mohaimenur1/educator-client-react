@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../context/UserContext";
 import NavImg from "./icon4.png";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const { user, logout } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logout()
+      .then(() => {})
+      .catch((error) => console.log(error));
+  };
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-light">
@@ -51,7 +60,7 @@ const Navbar = () => {
                   Blog
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   to="/login"
                   className="nav-link fw-semibold text-uppercase"
@@ -65,6 +74,49 @@ const Navbar = () => {
                   className="nav-link fw-semibold text-uppercase"
                 >
                   Register
+                </Link>
+              </li> */}
+              <li className="nav-item d-lg-flex align-items-center">
+                {user?.uid ? (
+                  <div className="me-2">
+                    <button className="btn btn-custom" onClick={handleLogOut}>
+                      Logout
+                    </button>
+                  </div>
+                ) : (
+                  <div className="d-lg-flex">
+                    <li className="nav-item">
+                      <Link
+                        to="/login"
+                        className="nav-link fw-semibold text-uppercase"
+                      >
+                        Login
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        to="/register"
+                        className="nav-link fw-semibold text-uppercase"
+                      >
+                        Register
+                      </Link>
+                    </li>
+                  </div>
+                )}
+              </li>
+              <li className="nav-item d-flex align-items-center">
+                <Link>
+                  {user?.photoURL ? (
+                    <img
+                      src={user?.photoURL}
+                      style={{ height: "40px" }}
+                      className="rounded-circle"
+                      // type="button"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title={user?.displayName}
+                    />
+                  ) : null}
                 </Link>
               </li>
             </ul>

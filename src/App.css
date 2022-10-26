@@ -2,7 +2,7 @@ body {
   color: grey;
 }
 
-/* h1,
+h1,
 h2,
 h3,
 h4,
@@ -10,8 +10,8 @@ h5,
 h6,
 p,
 i {
-  color: white;
-} */
+  color: rgb(12, 20, 46);
+}
 
 .link-text-color {
   color: rgb(211, 96, 70);

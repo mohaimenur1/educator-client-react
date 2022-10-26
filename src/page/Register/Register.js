@@ -16,7 +16,7 @@ const Register = () => {
             <div className="row mb-4">
               <div className="col">
                 <div className="form-outline">
-                  <label className="form-label" for="form3Example1">
+                  <label className="form-label" htmlFor="form3Example1">
                     Full Name
                   </label>
                   <input
@@ -29,14 +29,14 @@ const Register = () => {
             </div>
 
             <div className="form-outline mb-4">
-              <label className="form-label" for="form3Example3">
+              <label className="form-label" htmlFor="form3Example3">
                 Email address
               </label>
               <input type="email" id="form3Example3" className="form-control" />
             </div>
 
             <div className="form-outline mb-4">
-              <label className="form-label" for="form3Example4">
+              <label className="form-label" htmlFor="form3Example4">
                 Password
               </label>
               <input
@@ -46,7 +46,7 @@ const Register = () => {
               />
             </div>
             <div className="form-outline mb-4">
-              <label className="form-label" for="form3Example4">
+              <label className="form-label" htmlFor="form3Example4">
                 Photo URL
               </label>
               <input type="text" id="form3Example4" className="form-control" />
@@ -60,12 +60,12 @@ const Register = () => {
                 id="form2Example33"
                 checked
               />
-              <label className="form-check-label" for="form2Example33">
+              <label className="form-check-label" htmlFor="form2Example33">
                 <Link to="/login">Already Have An Account?</Link>
               </label>
             </div>
 
-            <div class="d-grid gap-2">
+            <div className="d-grid gap-2">
               <button type="submit" className="btn btn-primary btn-block mb-4">
                 Register
               </button>

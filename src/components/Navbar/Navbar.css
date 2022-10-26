@@ -1,3 +1,29 @@
 .navbar-bg {
   background-color: #3f4e4f;
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 12px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
