@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import "./ProgramDetails.css";
 import Pdf from "react-to-pdf";
 import PdfImg from "./img/1.png";
@@ -82,6 +82,15 @@ const ProgramDetails = () => {
           <div className="card-footer mt-4 text-center">
             <h4>Our Vision</h4>
             <p>{detailsData?.vision}</p>
+          </div>
+          <div className="d-flex justify-content-center">
+            <Link
+              to="/checkout"
+              type="button"
+              className="shadow btn btn-custom btn-lg mt-3"
+            >
+              Get premium access
+            </Link>
           </div>
         </div>
       </div>
