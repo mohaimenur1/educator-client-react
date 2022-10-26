@@ -17,23 +17,28 @@ const auth = getAuth(app);
 
 const UserContext = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
   //register using email and password
   const register = (email, password) => {
+    setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
   //google sign in option
   const googleLogin = (provider) => {
+    setLoading(true);
     return signInWithPopup(auth, provider);
   };
 
   //login
   const login = (email, password) => {
+    setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
   //logut
   const logout = () => {
+    setLoading(true);
     return signOut(auth);
   };
 
@@ -41,6 +46,7 @@ const UserContext = ({ children }) => {
     const unsbscribe = onAuthStateChanged(auth, (currentUser) => {
       console.log(currentUser);
       setUser(currentUser);
+      setLoading(false);
     });
     return () => {
       unsbscribe();
@@ -53,6 +59,7 @@ const UserContext = ({ children }) => {
     login,
     logout,
     googleLogin,
+    loading,
   };
 
   return (
