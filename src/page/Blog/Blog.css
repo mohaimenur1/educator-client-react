@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+.blog-heading {
+  font-family: "Alfa Slab One", cursive;
+}
+
 .bg-jumbotron {
   background: rgb(187, 155, 129);
   background: linear-gradient(

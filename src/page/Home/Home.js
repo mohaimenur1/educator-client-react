@@ -32,7 +32,9 @@ const Home = () => {
 
       {/* main section */}
       <section className="flex justify-content-centera align-iitems-center mt-5 mb-4 container">
-        <h1 className="text-center mb-4 text-secondary">Visit Our Programs</h1>
+        <h1 className="text-center mb-4 text-secondary blog-heading">
+          Visit Our Programs
+        </h1>
         <div className="row">
           <div className="col-lg-6">
             <img className="img-fluid me-4" src={DetailImg} alt="" />

@@ -1,6 +1,12 @@
 .heading-bg {
-  background-color: rgb(211, 96, 70);
+  /* background-color: rgb(211, 96, 70); */
   color: white;
+  background: rgb(221, 171, 160);
+  background: linear-gradient(
+    90deg,
+    rgba(221, 171, 160, 0.5158438375350141) 6%,
+    rgba(123, 175, 185, 0.2861519607843137) 95%
+  );
 }
 
 .pdf-icon {

@@ -42,6 +42,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        navigate(from, { replace: true });
       })
       .catch((error) => console.error(error));
   };
@@ -51,13 +52,14 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        navigate(from, { replace: true });
       })
       .catch((error) => console.error(error));
   };
 
   return (
     <div className="container mt-5 ">
-      <h2 className="text-center">Login Form</h2>
+      <h2 className="text-center link-text-color">Login Form</h2>
       <div className="card shadow">
         <form onSubmit={handleSubmit} className="mt-4 p-5">
           <div className="form-outline mb-4">

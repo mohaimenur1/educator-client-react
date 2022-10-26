@@ -4,7 +4,7 @@ import "./Blog.css";
 const Blog = () => {
   return (
     <div>
-      <h1 className="text-center mt-3 mb-3">Blog Page</h1>
+      <h2 className="text-center mt-3 mb-3 blog-heading">Welcome to Blog</h2>
       <div className="jumbotron container">
         <div className="row">
           {/* first question */}
