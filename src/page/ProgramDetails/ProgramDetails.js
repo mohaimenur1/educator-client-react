@@ -85,7 +85,7 @@ const ProgramDetails = () => {
           </div>
           <div className="d-flex justify-content-center">
             <Link
-              to="/checkout"
+              to={`/checkout/${detailsData.id}`}
               type="button"
               className="shadow btn btn-custom btn-lg mt-3"
             >
