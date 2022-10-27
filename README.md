@@ -8,11 +8,11 @@ Live website link [Eductor](https://educator-fd15d.web.app/).
 
 Description of project:
 
-- In Educator project user can taking programs according their choice.
-- User can Register with email and Password.Google SignIn,GitHub SignIn Facility also avaiable.
+- In Educator project, user can taking programs according their choice.
+- User can Register with email and Password. Google SignIn,GitHub SignIn Facility also available.
 - Download Details about the programs curriculums.
-- If someone need to purchase the program then the use must go through the primium access option which is protected.
-- User can see their iamge after login and also see the name hovering the image.
+- If someone need to purchase the program then the user must go through the primium access option which is protected.
+- User can see their image after login and also see the name hovering the image.
 
 ## Technologies used in Project
 
