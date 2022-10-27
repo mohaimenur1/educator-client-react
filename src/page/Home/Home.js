@@ -17,9 +17,9 @@ const Home = () => {
             learing and also well organised about their course structure.{" "}
           </p>
           <div className="d-flex text-center">
-            <button className="btn btn-custom btn-lg ms-2 fw-bold">
+            <Link to="/blogs" className="btn btn-custom btn-lg ms-2 fw-bold">
               Blogs
-            </button>
+            </Link>
             <Link
               to="/programs"
               className="btn btn-outline-light btn-lg ms-2 fw-bold"
