@@ -20,11 +20,11 @@ const ProgramDetails = () => {
   return (
     <div className="container">
       <div className="card shadow mt-3">
-        <div className="card-footer heading-bg">
-          <h5 className="card-title text-center mt-5 text-decoration-underline display-4 ">
+        <div className="card-footer heading-bg d-flex justify-content-center align-items-center">
+          <h5 className="card-title text-center me-3 fw-semibold  display-4 ">
             {detailsData?.pragram_name}
           </h5>
-          <div className="d-flex justify-content-center">
+          <div className="">
             <Pdf
               targetRef={ref}
               filename="code-example.pdf"
