@@ -4,16 +4,16 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="">
+    <div className="text-dark fw-semibold">
       <footer className="text-center text-lg-start bg-white text-muted">
-        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"></section>
+        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-sub-footer"></section>
 
         <section className="pt-3 bg-footer">
           <div className="container text-center text-md-start mt-5">
             <div className="row mt-3">
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">
-                  <i className="fas fa-gem me-3 text-secondary"></i>Educator
+                  <i className="fas fa-gem me-3 "></i>Educator
                 </h6>
                 <p className="">
                   Here you can find your expected program. Educator is not only
@@ -50,20 +50,17 @@ const Footer = () => {
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                 <p>
-                  <i className="fas fa-home me-3 text-secondary"></i> Mirpur,
-                  Dhaka
+                  <i className="fas fa-home me-3"></i> Mirpur, Dhaka
                 </p>
                 <p>
-                  <i className="fas fa-envelope me-3 text-secondary"></i>
+                  <i className="fas fa-envelope me-3"></i>
                   educator@edu.com
                 </p>
                 <p>
-                  <i className="fas fa-phone me-3 text-secondary"></i> + 01 234
-                  567 88
+                  <i className="fas fa-phone me-3"></i> + 01 234 567 88
                 </p>
                 <p>
-                  <i className="fas fa-print me-3 text-secondary"></i> + 01 234
-                  567 89
+                  <i className="fas fa-print me-3"></i> + 01 234 567 89
                 </p>
               </div>
             </div>
