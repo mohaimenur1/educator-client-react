@@ -35,7 +35,7 @@ const ProgramDetails = () => {
             >
               {({ toPdf }) => (
                 <img
-                  className="img-fluid shadow pdf-icon"
+                  className="img-fluid pdf-icon"
                   src={PdfImg}
                   onClick={toPdf}
                   alt=""
