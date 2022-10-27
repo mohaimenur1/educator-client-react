@@ -20,13 +20,13 @@ export const router = createBrowserRouter([
         path: "/",
         element: <Home />,
         loader: async () => {
-          return fetch("http://localhost:5000/programs");
+          return fetch("https://educator-server.vercel.app/programs");
         },
       },
       {
         path: "/programs",
         loader: async () => {
-          return fetch("http://localhost:5000/programs");
+          return fetch("https://educator-server.vercel.app/programs");
         },
         element: <Programs />,
       },
@@ -34,7 +34,9 @@ export const router = createBrowserRouter([
         path: "/programs/:pId",
         loader: async ({ params }) => {
           console.log(params);
-          return fetch(`http://localhost:5000/programs/${params.pId}`);
+          return fetch(
+            `https://educator-server.vercel.app/programs/${params.pId}`
+          );
         },
         element: <ProgramDetails />,
       },
@@ -50,7 +52,9 @@ export const router = createBrowserRouter([
         path: "/checkout/:cId",
         loader: async ({ params }) => {
           console.log(params);
-          return fetch(`http://localhost:5000/programs/${params.cId}`);
+          return fetch(
+            `https://educator-server.vercel.app/programs/${params.cId}`
+          );
         },
         element: (
           <PrivetRoute>
